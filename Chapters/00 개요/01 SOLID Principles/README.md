@@ -22,7 +22,7 @@ struct Journal
         ofstream ofs(filename);
         for (auto& s : entries)
         {
-            ofs<< s << endl;
+//            ofs<< s << endl;
         }
     }
 }
@@ -205,7 +205,7 @@ ColorSpecification green(Color::Green);
 
 auto green_things = bf.filter(all, green);
 for (auto& x : green_things)
-    cout << x->name << " is green" <<endl;
+    ...
 </pre></code>
 
 그렇다면 크기와 색상을 동시에 필터링 하는 조건은 어떻게 만들수 있을까?
@@ -442,7 +442,7 @@ struct  ConsoleLogger : ILogger
     ConsoleLogger() {}
     void Log(const string& s) override
     {
-        cout << "LOG : " << s.c_str() << endl;
+//      cout << "LOG : " << s.c_str() << endl;
     }
 };
 
